@@ -62,7 +62,7 @@ nome = st.text_input("Qual é o seu nome?")
 # Imagem e título centralizado
 st.markdown(f"""
 <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 20px;">
-    <img src="https://raw.githubusercontent.com/Lari-ia/pergunta-ai/principal/kapibara.png" alt="Kapibara" width="130" style="border-radius: 12px;">
+    <img src="https://raw.githubusercontent.com/Lari-ia/pergunta-ai/main/kapibara.png" alt="Kapibara" width="130" style="border-radius: 12px;">
     <h1 style="color: #ffb703; font-size: 40px; margin: 0;">❓ Pergunta Aí!</h1>
 </div>
 """, unsafe_allow_html=True)
