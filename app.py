@@ -61,7 +61,7 @@ Resposta:
 st.set_page_config(page_title="Pergunta Aí!", page_icon="🐾", layout="centered")
 
 # Nome da criança (opcional, para boas-vindas)
-nome = st.text_input("Qual é o seu nome?")
+nome = st.text_input("Meu nome é Kapibara, e o seu??")
 
 # Imagem e título centralizado
 st.markdown(f"""
@@ -84,7 +84,7 @@ pergunta = st.text_input(label="Digite sua pergunta:", label_visibility="collaps
 # Se tiver pergunta
 if pergunta:
     if pergunta_segura(pergunta):
-        resposta = responder(pergunta)
+        resposta = responder(pergunta, nome)
         st.success(resposta)
     else:
         st.warning("Hmm... essa pergunta não é legal de responder aqui. Que tal perguntar algo sobre animais ou o espaço? 🌈")
