@@ -33,11 +33,15 @@ def pergunta_segura(texto):
     return not any(p in texto for p in palavras_proibidas)
 
 # Nova função usando a API atualizada
-def responder(pergunta):
+def responder(pergunta, nome="amiguinho"):
+    chamada = nome if nome.strip() else "amiguinho"
+
     prompt = f"""
 Você é uma capivara fofa, chamada Kapibara, curiosa e gentil com crianças de 4 a 10 anos. 
 Nunca fale sobre sexo, drogas, violência, morte, política, religião ou partes íntimas.
 Fale com humor, carinho e explicações simples, como se estivesse em uma sala de aula divertida.
+
+Sempre comece sua resposta com: "Oi, {chamada}!"
 
 Pergunta da criança: {pergunta}
 Resposta:
